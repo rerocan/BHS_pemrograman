@@ -5,4 +5,4 @@ di kelas teori pertemuan ke dua saya mempelajari tentang dasar dari bahasa pemog
 
 # KELAS PRAKTEK 
 
-di kelas praktek saya mempelajari cara membuat repository di git dan cara meng commit dan push nya 
+di kelas praktek saya mempelajari cara membuat repository di git dan cara meng commit dan cara push nya 
