@@ -21,6 +21,6 @@
 
 # GITHUB COMMAND LINE SAAT MAINTENANCE/MONITORING PROJECT (TAMBAH KURANG ISI FILE)
 
->git add .
->git commit -m "pesannya"
->git push
+- git add .
+- git commit -m "pesannya"
+- git push
