@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    cout << "ai mokai budi pu mama ni aig"<<endl;
+    cout << "BLYAT"<<endl;
 
     return 0;
 }
