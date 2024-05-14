@@ -1,0 +1,86 @@
+@startuml
+actor User
+participant "Main Program" as Main
+
+User -> Main: Start Program
+Main -> User: Display Main Menu
+loop Main Menu
+    alt Choose Makanan
+        User -> Main: Choose 1
+        Main -> User: Display Makanan Options
+        alt Choose Pecel Lele
+            User -> Main: Choose Pecel Lele
+            Main -> User: Ask for Quantity
+            User -> Main: Provide Quantity
+            Main -> Main: Calculate Total for Pecel Lele
+            Main -> Main: Store Order ("Pecel Lele", jumlah, 15000)
+        end
+        alt Choose Nasi Goreng
+            User -> Main: Choose Nasi Goreng
+            Main -> User: Ask for Quantity
+            User -> Main: Provide Quantity
+            Main -> Main: Calculate Total for Nasi Goreng
+            Main -> Main: Store Order ("Nasi Goreng", jumlah, 10000)
+        end
+        alt Choose Kembali
+            User -> Main: Choose Kembali
+        end
+        alt Invalid Choice
+            User -> Main: Invalid Choice
+            Main -> User: Display Invalid Choice Message
+        end
+    end
+    alt Choose Minuman
+        User -> Main: Choose 2
+        Main -> User: Display Minuman Options
+        alt Choose Es Teh Manis
+            User -> Main: Choose Es Teh Manis
+            Main -> User: Ask for Quantity
+            User -> Main: Provide Quantity
+            Main -> Main: Calculate Total for Es Teh Manis
+            Main -> Main: Store Order ("Es Teh Manis", jumlah, 5000)
+        end
+        alt Choose Es Jeruk Anget
+            User -> Main: Choose Es Jeruk Anget
+            Main -> User: Ask for Quantity
+            User -> Main: Provide Quantity
+            Main -> Main: Calculate Total for Es Jeruk Anget
+            Main -> Main: Store Order ("Es Jeruk Anget", jumlah, 7000)
+        end
+        alt Choose Kembali
+            User -> Main: Choose Kembali
+        end
+        alt Invalid Choice
+            User -> Main: Invalid Choice
+            Main -> User: Display Invalid Choice Message
+        end
+    end
+    alt Choose Tagihan
+        User -> Main: Choose 3
+        Main -> Main: Calculate and Display Total Bill
+        Main -> User: Display Orders and Total Payment
+    end
+    alt Choose Keluar
+        User -> Main: Choose 4
+        Main -> Main: Calculate and Display Final Bill
+        Main -> User: Display Orders and Total Payment
+        return
+    end
+    alt Invalid Choice
+        User -> Main: Invalid Choice
+        Main -> User: Display Invalid Choice Message
+    end
+    Main -> User: Continue Program? (y/n)
+    User -> Main: Provide Response
+    alt Continue
+        User -> Main: y
+        Main -> User: Redisplay Main Menu
+    end
+    alt End
+        User -> Main: n
+        Main -> Main: Calculate and Display Final Bill
+        Main -> User: Display Orders and Total Payment
+        return
+    end
+end
+@enduml
