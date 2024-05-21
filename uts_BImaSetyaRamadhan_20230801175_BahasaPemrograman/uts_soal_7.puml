@@ -1,0 +1,17 @@
+@startuml
+
+start
+:Menu Utama;
+:1. Penjumlahan;
+:2. Pengurangan;
+:3. Perkalian;
+:4. Pembagian;
+:Masukkan pilihan anda;
+if (Pilihan Valid?) then (ya)
+  :Operasi Matematika;
+else (tidak)
+  :Pesan Kesalahan;
+endif
+stop
+
+@enduml
