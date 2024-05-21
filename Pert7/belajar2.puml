@@ -1,0 +1,14 @@
+@startuml 
+
+[*] --> MENU 
+MENU : 1. Aku 
+MENU : 2. Dia 
+MENU --> PILIHAN
+PILIHAN : Masukan PIlihan Anda 
+PILIHAN --> MENU : PIlihan Anda Salah
+PILIHAN --> Aku : Oke
+PILIHAN --> Dia : Oke 
+Aku --> [*]: SELESAI
+Dia --> [*]: SELESAI
+
+@enduml 
