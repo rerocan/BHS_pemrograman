@@ -1,0 +1,60 @@
+@startuml
+skinparam backgroundColor #EEEBD9
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+}
+
+title Kshoe's Business Concept Diagram
+
+rectangle "Bisnis Kshoe's" {
+    rectangle "Tujuan Bisnis" {
+        "Meningkatkan Penjualan Tahunan" 
+        "Mengatasi Penurunan Transaksi Bulanan" 
+        "Meningkatkan Tingkat Retensi Pelanggan"
+        "Meningkatkan Nilai Pesanan Rata-Rata (AOV)"
+    }
+
+    rectangle "Masalah Terkait Tujuan Bisnis" {
+        "Penurunan Transaksi Bulanan"
+        "Rendahnya Tingkat Retensi Pelanggan"
+        "Keterbatasan dalam Personalisasi Pengalaman Belanja"
+        "Pengelolaan Inventaris yang Tidak Efisien"
+        "Kurangnya Analisis Data yang Mendalam"
+    }
+
+    rectangle "Penyelesaian dalam Mencapai Tujuan" {
+        "Implementasi Analisis Data dan Model Prediktif"
+        "Personalisasi Penawaran Produk"
+        "Strategi Pemasaran yang Ditargetkan"
+        "Optimalisasi Situs Web"
+        "Manajemen Inventaris yang Efektif"
+        "Pelatihan dan Pengembangan Tim"
+        "Pemantauan dan Evaluasi Berkelanjutan"
+    }
+
+    rectangle "Fungsi Teknis" {
+        "Analisis Data dan Manajemen Data"
+        "Pengembangan Model Prediktif"
+        "Integrasi Sistem"
+        "Pengembangan Platform E-commerce"
+        "Pemantauan dan Evaluasi"
+    }
+
+    rectangle "Fungsi Non-Teknis" {
+        "Manajemen Proyek"
+        "Strategi Pemasaran"
+        "Manajemen Hubungan Pelanggan"
+        "Pengembangan Produk"
+        "Pelatihan dan Pengembangan Tim"
+    }
+
+    rectangle "Implementasi" {
+        "Tahap Persiapan"
+        "Tahap Pengembangan"
+        "Tahap Peluncuran"
+        "Tahap Evaluasi dan Iterasi"
+    }
+}
+
+@enduml

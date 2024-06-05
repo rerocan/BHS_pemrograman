@@ -1,0 +1,19 @@
+@startuml
+
+class Shoe {
+    - name: std::string
+    - condition: std::string
+    - price: int
+}
+
+class Main {
+    - inventory: std::vector<Shoe>
+    + addShoe(name: std::string, condition: std::string, price: int): void
+    + displayInventory(): void
+    + sellShoe(name: std::string): void
+}
+
+Main --> Shoe : contains >
+Main "1" --> "0..*" Shoe : has
+
+@enduml
