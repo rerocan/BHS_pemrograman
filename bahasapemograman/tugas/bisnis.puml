@@ -1,0 +1,20 @@
+@startuml
+    start
+    :Registrasi Pengguna;
+    :Login;
+    :Halaman Utama;
+    :Telusuri Sneakers;
+    :Lihat Detail Sneakers;
+    :Pilih untuk Beli/Jual/Tukar;
+    :Masukkan Informasi Pembayaran;
+    :Konfirmasi Transaksi;
+    :Terima Notifikasi;
+    :Lacak Pesanan;
+    :Berikan Ulasan;
+    stop
+
+    :Halaman Utama;
+    :Akses Forum dan Komunitas;
+    :Posting dan Diskusi;
+    stop
+@enduml
