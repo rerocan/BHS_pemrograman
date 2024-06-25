@@ -1,8 +1,7 @@
-pert8/db/mariadb/*
-pert8/db/postgres/*
-pert8/db/mongo/*
-pert8/db/redis/*
-pert9/db/mariadb/*
-pert9/db/postgres/*
-pert9/db/mongo/*
-pert9/db/redis/*
+mariadb/
+mongo/
+postgres/
+redis/
+mysql/
+performance_schema/
+data/
