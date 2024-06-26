@@ -1,0 +1,4 @@
+--2024-06-26 08:09:56--  https://update.code.visualstudio.com/commit:5437499feb04f7a586f677b155b039bc2b3669eb/server-linux-legacy-x64/stable
+Resolving update.code.visualstudio.com (update.code.visualstudio.com)... 13.107.246.59, 2620:1ec:bdf::59
+Connecting to update.code.visualstudio.com (update.code.visualstudio.com)|13.107.246.59|:443... failed: Connection timed out.
+Connecting to update.code.visualstudio.com (update.code.visualstudio.com)|2620:1ec:bdf::59|:443... failed: Network is unreachable.
