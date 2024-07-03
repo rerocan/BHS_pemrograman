@@ -22,4 +22,12 @@ $router->group(['prefix' => 'api/v1/user'], function () use ($router) {
     $router->get('/', ['uses' => 'UserController@index']);
 });
 
+$router->group(['prefix' => 'api/v1/user', 'middleware'=> 'auth'], function () use ($router) {
+    $router->get('/', ['uses' => 'UserController@index']);
+});
+
+$router->group(['prefix' => 'api/v1/product', 'middleware' => 'auth'], function () use ($router) {
+    $router->get('/', ['uses' => 'ProductController@index']);
+    $router->post('/', ['uses' => 'ProductController@store']);
+});
 //$router->get('/api/v1/user', ['uses' => 'UserController@index']);
