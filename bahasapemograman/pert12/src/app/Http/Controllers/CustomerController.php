@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class ProductController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $data = DB::connection('mysql')->table('products')->get();
+        
+        $data = DB::connection('mysql')->table('customers')->get();
         return response()->json($data, 200);
     }
 
@@ -45,11 +46,11 @@ class ProductController extends Controller
             'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
             'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
         ];
-        $id = DB::connection('mysql')->table('products')->insertGetid($product);
-        $data = DB::connection('mysql')->table('products')->where('id', $id)->first();
+        $id = DB::connection('mysql')->table('customers')->insertGetid($product);
+        $data = DB::connection('mysql')->table('customers')->where('id', $id)->first();
         $response = [
             'message' => 'true',
-            'message' => 'Product Created',
+            'message' => 'customer Created',
             'date' => $product
         ];
         return response()->json($response, 201);
@@ -58,12 +59,12 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $data = Product::find($id);
+        $data = Customer::find($id);
         if($data){
             return response()->json([
                 'success' => 'true',
@@ -78,12 +79,10 @@ class ProductController extends Controller
         }
     }
 
-
-
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, $id)
@@ -91,9 +90,9 @@ class ProductController extends Controller
         $this->validate($request, [
             'name' => 'required'
         ]);
-        $data = Product::find($id);
+        $data = Customer::find($id);
         if($data){
-        $data = new Product();
+        $data = new Customer();
         $data->name = $request->input('name');
         $data->save();
 
@@ -115,10 +114,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Product  $product
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -126,12 +125,12 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Product  $product
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $data = Product::find($id);
+        $data = Customer::find($id);
         if($data){
             $data ->delete();
             return response()->json([
