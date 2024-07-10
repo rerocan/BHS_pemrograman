@@ -28,4 +28,3 @@ Edge-Edge yang terhubung berdasarkan directed graf di atas:
         7. <I,G>, <I,J>
         8. <J,K>
         9. <K,H>, <K,F>
-
