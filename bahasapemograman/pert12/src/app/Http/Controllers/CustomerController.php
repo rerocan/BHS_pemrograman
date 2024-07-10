@@ -92,7 +92,6 @@ class CustomerController extends Controller
         ]);
         $data = Customer::find($id);
         if($data){
-        $data = new Customer();
         $data->name = $request->input('name');
         $data->save();
 
@@ -100,7 +99,7 @@ class CustomerController extends Controller
         return response()->json([
             'success' => 'true',
             'message' => 'Data Updated',
-            'data' => $data
+            'data' => $data,
         ]);
         }else{
             return response()->json([
