@@ -228,7 +228,8 @@ void beli_barang(const string &barang_id, int jumlah_beli)
     if (conn)
     {
         stringstream ss;
-        ss << "UPDATE barang SET stok_barang = stok_barang - " << jumlah_beli << " WHERE barang_id = '" << barang_id << "'";
+        // Update the column name to the correct one, e.g., 'id' instead of 'barang_id'
+        ss << "UPDATE barang SET stok_barang = stok_barang - " << jumlah_beli << " WHERE id = '" << barang_id << "'";
         string query = ss.str();
         if (mysql_query(conn, query.c_str()))
         {

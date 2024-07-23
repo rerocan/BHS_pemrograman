@@ -13,7 +13,7 @@ services:
       - ./database/conf.d:/etc/mysql/conf.d:ro
     environment:
       MYSQL_USER: root
-      MYSQL_PASSWORD: 123
+      MYSQL_PASSWORD: 231
       MYSQL_ROOT_PASSWORD: 123
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
