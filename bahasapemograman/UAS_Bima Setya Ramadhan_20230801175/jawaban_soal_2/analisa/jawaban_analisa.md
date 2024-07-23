@@ -1,0 +1,2 @@
+# Exception handling 
+adalah mekanisme dalam pemrograman untuk menangani kesalahan atau kondisi tidak biasa yang terjadi selama eksekusi program. Tujuan dari exception handling adalah untuk menjaga agar program tetap berjalan meskipun terjadi kesalahan. Dalam Python, exception handling dilakukan dengan menggunakan blok try, except, else, dan finally.

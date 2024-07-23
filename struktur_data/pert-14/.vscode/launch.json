@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/root/Perkuliahan/BHS_pemrograman/struktur_data/UAS_StrukturData",
-      "program": "/root/Perkuliahan/BHS_pemrograman/struktur_data/UAS_StrukturData/build/Debug/outDebug",
+      "cwd": "/root/Perkuliahan/BHS_pemrograman/struktur_data/pert-14",
+      "program": "/root/Perkuliahan/BHS_pemrograman/struktur_data/pert-14/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
