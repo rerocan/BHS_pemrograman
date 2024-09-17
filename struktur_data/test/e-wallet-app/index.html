@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallet Seperti Dana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>E-Wallet Saya</h1>
+            <div id="balance" class="balance">Rp 1.500.000</div>
+        </div>
+
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <div class="menu-item" onclick="topUp()">
+                <img src="https://img.icons8.com/color/48/null/wallet.png" alt="Top Up">
+                <p>Top Up</p>
+            </div>
+            <div class="menu-item" onclick="transfer()">
+                <img src="https://img.icons8.com/color/48/null/money-transfer.png" alt="Transfer">
+                <p>Transfer</p>
+            </div>
+            <div class="menu-item" onclick="bayar()">
+                <img src="https://img.icons8.com/color/48/null/purchase-order.png" alt="Bayar">
+                <p>Bayar</p>
+            </div>
+            <div class="menu-item" onclick="history()">
+                <img src="https://img.icons8.com/color/48/null/clock.png" alt="History">
+                <p>History</p>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button onclick="scanQR()">Scan QR</button>
+            <button onclick="moreActions()">More</button>
+        </div>
+
+        <!-- Transaction History -->
+        <div id="transaction-history" class="transaction-history">
+            <h2>Riwayat Transaksi</h2>
+            <div class="transaction-item">
+                <span>Belanja di Tokopedia</span>
+                <span class="amount">- Rp 250.000</span>
+            </div>
+            <div class="transaction-item">
+                <span>Top Up E-Wallet</span>
+                <span class="amount">+ Rp 500.000</span>
+            </div>
+            <div class="transaction-item">
+                <span>Transfer ke Budi</span>
+                <span class="amount">- Rp 300.000</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

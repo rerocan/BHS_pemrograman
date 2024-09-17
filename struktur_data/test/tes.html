@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan E-Wallet Seperti Dana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 420px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            background-color: #0A74DA;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .balance {
+            margin: 20px 0;
+            font-size: 32px;
+        }
+
+        .menu-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .menu-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Actions */
+        .actions {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .actions button {
+            background-color: #0A74DA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .actions button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Transaction History */
+        .transaction-history {
+            padding: 20px;
+        }
+
+        .transaction-history h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .transaction-history .transaction-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+
+        .transaction-item span {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .transaction-item .amount {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>E-Wallet Saya</h1>
+            <div class="balance">Rp 1.500.000</div>
+        </div>
+
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <div class="menu-item">
+                <img src="https://img.icons8.com/color/48/null/wallet.png" alt="Top Up">
+                <p>Top Up</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.icons8.com/color/48/null/money-transfer.png" alt="Transfer">
+                <p>Transfer</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.icons8.com/color/48/null/purchase-order.png" alt="Bayar">
+                <p>Bayar</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.icons8.com/color/48/null/clock.png" alt="History">
+                <p>History</p>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button>Scan QR</button>
+            <button>More</button>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="transaction-history">
+            <h2>Riwayat Transaksi</h2>
+            <div class="transaction-item">
+                <span>Belanja di Tokopedia</span>
+                <span class="amount">- Rp 250.000</span>
+            </div>
+            <div class="transaction-item">
+                <span>Top Up E-Wallet</span>
+                <span class="amount">+ Rp 500.000</span>
+            </div>
+            <div class="transaction-item">
+                <span>Transfer ke Budi</span>
+                <span class="amount">- Rp 300.000</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
